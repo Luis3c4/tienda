@@ -1,0 +1,4 @@
+com\mycompany\tienda\JakartaRestConfiguration.class
+dao\ConexionDB.class
+test.class
+com\mycompany\tienda\resources\JakartaEE10Resource.class
