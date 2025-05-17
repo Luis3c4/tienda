@@ -9,18 +9,26 @@ package modelo;
  * @author luis
  */
 public class Producto {
+
     private int idProducto;
     private String nombre;
     private double precio;
     private int cantidad;
-    
-    public Producto(){
+
+    public Producto() {
     }
-    public Producto(int idProducto, String nombre, double precio, int cantidad){
-        this.idProducto= idProducto;
-        this.nombre= nombre;
-        this.precio=precio;
-        this.cantidad= cantidad;
+
+    public Producto(String nombre, double precio, int cantidad) {
+        this.nombre = nombre;
+        this.precio = precio;
+        this.cantidad = cantidad;
+    }
+
+    public Producto(int idProducto, String nombre, double precio, int cantidad) {
+        this.idProducto = idProducto;
+        this.nombre = nombre;
+        this.precio = precio;
+        this.cantidad = cantidad;
     }
 
     public int getIdProducto() {
@@ -54,5 +62,10 @@ public class Producto {
     public void setCantidad(int cantidad) {
         this.cantidad = cantidad;
     }
+
     
+    @Override
+    public String toString() {
+        return "Producto [idProducto=" + idProducto + ", nombre=" + nombre + ", precio=" + precio + ", cantidad=" + cantidad + "]";
+    }
 }
